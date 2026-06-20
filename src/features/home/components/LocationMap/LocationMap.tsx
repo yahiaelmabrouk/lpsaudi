@@ -131,14 +131,14 @@ const LocationMap: FunctionComponent<LocationMapType> = ({
                   " ",
                 )}
               >
-                <div className={styles.wrapper}>
-                  <div className={styles.div}>الفيحاء</div>
-                </div>
                 <img
                   className={styles.fluentlocation28FilledIcon}
                   alt=""
                   src={asset("/fluent-location-28-filled.svg")}
                 />
+                <div className={styles.wrapper}>
+                  <div className={styles.div}>الفيحاء</div>
+                </div>
               </div>
             </div>
           </div>
@@ -188,6 +188,15 @@ const LocationMap: FunctionComponent<LocationMapType> = ({
             </div>
             <div className={styles.div7}>
               هدفنا: ترجع ملابسك نظيفة ومنعشة… وتلبسها بثقة وكأنها جديدة، مو مجرد غسيل سريع.</div>
+            <div className={styles.backgroundborder}>
+              <div className={styles.parent}>
+                <div className={styles.div8}>★★★★★</div>
+                <div className={styles.div9}>5/5 (21) تقييم العملاء</div>
+              </div>
+              <div className={styles.container2}>
+                <img className={styles.starIcon} alt="star" src={asset("/AdobeExpressPhotos_c5471b286e9c4ba695fcdd21db853b93.png")} />
+              </div>
+            </div>
           </div>
           <div className={styles.layer1Parent}>
             <img

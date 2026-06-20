@@ -300,7 +300,7 @@ const HeroSection: FunctionComponent<HeroSectionType> = ({
           <div className={styles.descriptionContainerParent}>
             <div className={styles.descriptionContainer}>
               <h1 className={styles.h1}>
-                <span>{`غسيل وكي الملابس مع `}</span>
+                <span>{`غسيل وتنظيف السجاد مع `}</span>
                 <span className={styles.span}>استلام وتسليم للباب</span>
               </h1>
             </div>

@@ -13,7 +13,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
     <section className={[styles.footer, className].join(" ")}>
       <h1 className={styles.h1}>
         <span>{`جاهز ترجع `}</span>
-        <span className={styles.span}>ملابسك</span>
+        <span className={styles.span}>سجادك</span>
         <span> نظيف بدون تعب؟</span>
       </h1>
       <div className={styles.footerAw}>

@@ -10,6 +10,11 @@ type MainLayoutProps = {
 const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => {
   return (
     <div className={styles.layout}>
+      <div className={styles.announcementBar} dir="rtl">
+        <p className={styles.announcementText}>
+          حمّل تطبيق <span className={styles.announcementBrand}>Laundry Heroes</span> واطلب غسيل سجاد وتنظيف سجاد في جدة مع استلام وتسليم للباب.
+        </p>
+      </div>
       <header className={styles.nav}>
         <div className={styles.navInner}>
           <div className={styles.logoGroup}>

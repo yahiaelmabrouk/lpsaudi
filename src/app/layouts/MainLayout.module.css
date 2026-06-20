@@ -7,6 +7,33 @@
   letter-spacing: normal;
 }
 
+/* ── Announcement Bar ── */
+.announcementBar {
+  width: 100%;
+  background-color: #eef6fb;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(69, 200, 245, 0.2);
+}
+
+.announcementText {
+  margin: 0;
+  font-family: var(--font-expo-arabic);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1a7bbf;
+  text-align: center;
+}
+
+.announcementBrand {
+  font-weight: 700;
+  color: #1a7bbf;
+}
+
 /* ── Navbar ── */
 .nav {
   position: sticky;

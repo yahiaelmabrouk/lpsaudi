@@ -16,8 +16,9 @@ const Pricing: FunctionComponent<PricingType> = ({ className = "" }) => {
           <b className={styles.b}>التسعيرة</b>
         </div>
         <h2 className={styles.h2}>
-          <span>{`كم سعر غسيل وكي `}</span>
-          <span className={styles.span}>الملابس؟</span>
+          <span>{`كم سعر غسيل وتنظيف `}</span>
+          <span className={styles.span}>السجاد</span>
+          <span>{`؟`}</span>
         </h2>
       </div>
       <div className={styles.priceInfo}>
@@ -37,8 +38,9 @@ const Pricing: FunctionComponent<PricingType> = ({ className = "" }) => {
             rel="noopener noreferrer"
             className={styles.link}
           >
+            <b className={styles.b2}>
             افتح التسعيرة الآن داخل التطبيق
-            <br />
+            </b>
             <b className={styles.b2}>حمل التطبيق الان</b>
           </a>
         </div>
