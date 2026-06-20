@@ -1,0 +1,193 @@
+.carpetTypes {
+  width: 100%;
+  background: var(--gradient-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 128px;
+  gap: 57px;
+  box-sizing: border-box;
+}
+
+/* dir="rtl" reverses row direction:
+   first child (textSection) → RIGHT side ✓
+   second child (mascotImage) → LEFT side ✓ */
+
+.mascotImage {
+  width: 403.65px;
+  max-width: 100%;
+  height: 395.39px;
+  max-height: 100%;
+  object-fit: contain;
+  flex-shrink: 1;
+}
+
+/* Inside dir="rtl", column flex:
+   flex-start = RIGHT (the inline start in RTL)
+   flex-end   = LEFT  (the inline end in RTL)
+   So we use flex-start everywhere we want right-aligned content. */
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0px;
+  gap: 32px;
+  width: 610px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  text-align: right;
+  color: var(--Main-Secondary);
+  font-family: var(--font-expo-arabic);
+}
+
+.headerGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 16px 5.39px;
+  background: var(--gradient-6);
+  border-radius: var(--br-20);
+}
+
+.badgeText {
+  font-size: var(--fs-12);
+  line-height: var(--lh-20);
+  letter-spacing: var(--ls-0_5);
+  text-transform: uppercase;
+  color: var(--Main-Secondary);
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  align-self: stretch;
+  font-family: var(--font-dg-rafah);
+  font-weight: 400;
+  font-size: var(--fs-36);
+  line-height: 45px;
+  text-align: right;
+  color: var(--Main-Secondary);
+}
+
+.accentWord {
+  color: var(--Main-Accent);
+}
+
+.typesList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-16);
+  width: 100%;
+}
+
+.typeItem {
+  align-self: stretch;
+  font-weight: 600;
+  font-size: var(--fs-32);
+  line-height: var(--lh-40);
+  text-align: right;
+  color: var(--Main-Secondary);
+}
+
+@media screen and (max-width: 1410px) {
+  .container {
+    padding-left: var(--padding-64);
+    padding-right: var(--padding-64);
+  }
+  .mascotImage,
+  .textSection {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .mascotImage {
+    flex: 1;
+  }
+  .textSection {
+    flex: 1;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .carpetTypes {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-32) var(--padding-20);
+    gap: var(--gap-24);
+  }
+
+  .mascotImage {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    order: 1;
+  }
+
+  .textSection {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    order: 0;
+  }
+
+  .headerGroup {
+    align-items: center;
+  }
+
+  .title {
+    font-size: var(--fs-29);
+    text-align: center;
+  }
+
+  .typesList {
+    align-items: center;
+  }
+
+  .typeItem {
+    font-size: var(--fs-20);
+    line-height: 140%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--fs-22);
+  }
+
+  .typeItem {
+    font-size: var(--fs-18);
+  }
+}

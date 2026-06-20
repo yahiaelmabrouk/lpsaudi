@@ -1,0 +1,824 @@
+.heroHeader,
+.heroSection {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.heroSection {
+  width: 100%;
+  border-radius: 0 0 var(--br-64) var(--br-64);
+  background: var(--gradient-1);
+  flex-direction: column;
+  padding: 132px 0 var(--padding-64);
+  gap: var(--gap-32);
+  text-align: right;
+  font-size: var(--fs-12);
+  color: var(--color-white);
+  font-family: var(--font-expo-arabic);
+}
+.heroHeader {
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  padding: 0 var(--padding-64);
+  gap: var(--gap-20);
+}
+.heroVisIcon {
+  width: 545px;
+  max-width: 100%;
+  object-fit: contain;
+  flex-shrink: 1;
+}
+.heroText {
+  flex: 1;
+  min-width: 300px;
+  max-width: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-20) 0;
+  box-sizing: border-box;
+  gap: var(--gap-32);
+  text-align: left;
+  font-size: var(--fs-18);
+  color: var(--Main-Secondary);
+  font-family: var(--font-expo-arabic);
+}
+.wrapper {
+  box-shadow: var(--Shadow-02);
+  border-radius: 50px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--padding-8) var(--padding-16);
+}
+.div {
+  position: relative;
+  line-height: var(--lh-28);
+  direction: rtl;
+}
+.starIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.span {
+  color: var(--Main-Accent);
+}
+.descriptionContainerParent {
+  gap: var(--gap-16);
+  text-align: right;
+  font-size: var(--fs-48);
+  font-family: var(--font-dg-rafah);
+}
+.descriptionContainer,
+.descriptionContainerParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.h1,
+.laundryHeroes {
+  align-self: stretch;
+  position: relative;
+}
+.h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.laundryHeroes {
+  font-size: var(--fs-18);
+  line-height: var(--lh-28);
+  color: var(--Main-Primary);
+  font-family: var(--font-expo-arabic);
+  direction: rtl;
+}
+.span3 {
+  color: var(--Main-Accent);
+  white-space: pre-wrap;
+}
+.storeDownload {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-8);
+  font-size: var(--fs-10);
+  color: var(--color-white);
+  font-family: var(--font-product-sans);
+}
+.storeDownloadButton {
+  border-radius: var(--br-6);
+  background-color: var(--Main-Secondary);
+  border: var(--border-1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 6.5px 32px;
+  gap: var(--gap-7);
+  width: 170px;
+  height: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+.playstoreIcon {
+  height: var(--height-24);
+  width: 21px;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-3);
+}
+.subtext {
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+}
+.path90Icon {
+  width: 74px;
+  height: var(--height-15);
+  position: relative;
+}
+.storeDownloadButton2 {
+  border-radius: var(--br-6);
+  background-color: var(--Main-Secondary);
+  border: var(--border-1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 6.5px 32px;
+  gap: var(--gap-8);
+  width: 170px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 9px;
+  font-family: var(--font-sf-compact-text);
+  text-decoration: none;
+  color: inherit;
+}
+.appleIcon {
+  height: var(--height-24);
+  width: var(--width-20);
+  position: relative;
+}
+.content2 {
+  width: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.appStore,
+.downloadOnThe {
+  align-self: stretch;
+  position: relative;
+  line-height: 9px;
+  font-weight: 500;
+}
+.appStore {
+  font-size: var(--fs-18);
+  letter-spacing: -0.47px;
+  line-height: 100%;
+  font-family: var(--font-sf-compact-display);
+}
+.container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: var(--gap-32);
+  row-gap: var(--gap-8);
+  text-align: center;
+  font-size: var(--fs-20);
+  direction: rtl;
+}
+.container2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: var(--gap-8);
+  grid-column: 2;
+  grid-row: 1;
+}
+.div2 {
+  position: relative;
+  line-height: var(--lh-32);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.container3 {
+  height: var(--height-21_3);
+  width: var(--width-9_4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: var(--fs-18);
+  color: var(--Main-Accent);
+  font-family: var(--font-cairo);
+}
+.b {
+  position: relative;
+  line-height: var(--lh-21_3);
+  flex-shrink: 0;
+}
+.container4 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: var(--gap-8);
+  grid-column: 1;
+  grid-row: 1;
+}
+.container6 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: var(--gap-8);
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: flex-end;
+}
+.container8 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: var(--gap-8);
+  grid-column: 1;
+  grid-row: 2;
+  justify-content: flex-end;
+}
+.frameParent,
+.maskGroupParent {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-64);
+  gap: var(--gap-20);
+  flex-wrap: wrap;
+}
+.maskGroupParent {
+  height: 380px;
+  width: 662.1px;
+  max-width: 100%;
+  border-radius: var(--br-32);
+  border: 2px solid var(--Main-Accent);
+  align-items: flex-start;
+  padding: var(--padding-31) var(--padding-30) 144px 287px;
+  position: relative;
+  isolation: isolate;
+  gap: 171.8px;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+.frameChild,
+.maskGroupIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: 8.3px;
+  left: 8.3px;
+  flex-shrink: 0;
+}
+.maskGroupIcon {
+  height: 363.4px;
+  width: calc(100% - 16px);
+  right: 7.7px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: var(--br-24);
+}
+.heroVideo {
+  position: absolute;
+  top: 8.3px;
+  left: 8.3px;
+  right: 7.7px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16.6px);
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  border-radius: var(--br-24);
+  background: var(--color-gray-700, #111);
+  display: block;
+  z-index: 0;
+}
+.frameChild {
+  height: 363.1px;
+  width: calc(100% - 16.6px);
+  right: 8.3px;
+  border-radius: var(--br-24);
+  background: var(--gradient-2);
+  z-index: 1;
+  display: none; /* Hidden: the video replaces the static pink overlay */
+}
+.frameItem {
+  height: 380px;
+  width: 662.1px;
+  position: relative;
+  border-radius: var(--br-32);
+  background: var(--gradient-3);
+  display: none;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.playButton,
+.playButtonWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.playButtonWrapper {
+  align-items: flex-start;
+  padding: 111.9px var(--padding-0) var(--padding-0);
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  position: relative;
+  z-index: 5;
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+@media (hover: hover) {
+  .playButtonWrapper:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+.playButton {
+  width: 87.5px;
+  height: 87.5px;
+  align-items: center;
+  isolation: isolate;
+}
+.background,
+.overlayshadow {
+  border-radius: 42px;
+  z-index: 0;
+}
+.background {
+  width: 84px;
+  height: 84px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-0) var(--padding-26) var(--padding-0) 29px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+}
+.overlayshadow {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: calc(50% - 42px);
+  box-shadow: var(--shadow-drop-1);
+  background-color: var(--color-gray-700);
+  flex-shrink: 0;
+}
+.svgIcon {
+  height: var(--height-28);
+  width: var(--width-28);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.border {
+  height: calc(100% + 32px);
+  width: calc(100% + 32px);
+  position: absolute;
+  margin: 0 !important;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  border-radius: 58px;
+  border: 1px solid var(--color-gray-600);
+  z-index: 2;
+}
+.border,
+.border2,
+.durationBadge {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.border2 {
+  height: calc(100% + 56px);
+  width: calc(100% + 56px);
+  position: absolute;
+  margin: 0 !important;
+  top: -28px;
+  right: -28px;
+  bottom: -28px;
+  left: -28px;
+  border-radius: 70px;
+  border: 1px solid var(--color-gray-500);
+  z-index: 3;
+}
+.durationBadge {
+  height: 34.4px;
+  width: 82.2px;
+  backdrop-filter: blur(8px);
+  border-radius: var(--br-20);
+  background-color: var(--color-gray-400);
+  border: 1px solid var(--color-gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-4) var(--padding-14);
+  gap: var(--gap-6);
+  z-index: 4;
+}
+.b5 {
+  position: relative;
+  line-height: var(--lh-20_4);
+}
+.background2 {
+  height: 7px;
+  width: 7px;
+  position: relative;
+  border-radius: 3.5px;
+  background-color: var(--color-crimson);
+}
+.benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-16);
+  width: 560px;
+  min-width: 0;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--fs-24);
+  color: var(--Main-Secondary);
+  font-family: var(--font-expo-arabic);
+}
+.frameGroup {
+  align-self: stretch;
+  box-shadow: var(--shadow-drop-2);
+  border-radius: var(--br-24);
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  row-gap: var(--gap-0);
+}
+.paragraphbackgroundshadow {
+  align-self: stretch;
+  box-shadow: var(--shadow-drop-3);
+  border-radius: var(--br-24);
+  background-color: var(--Main-Accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-16);
+  color: var(--color-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+.div6 {
+  align-self: stretch;
+  position: relative;
+  line-height: var(--lh-32);
+  font-weight: 500;
+  white-space: nowrap;
+  direction: rtl;
+  text-align: center;
+}
+@media screen and (max-width: 1410px) {
+  .heroSection {
+    height: auto;
+  }
+  .heroHeader {
+    flex-wrap: wrap;
+    padding-left: var(--padding-32);
+    padding-right: var(--padding-32);
+  }
+  .heroText,
+  .heroVisIcon {
+    flex: 1;
+  }
+  .frameParent {
+    padding-left: var(--padding-32);
+    padding-right: var(--padding-32);
+  }
+  .benefitsContainer,
+  .maskGroupParent {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .heroSection {
+    padding-top: 86px;
+    padding-bottom: var(--padding-42);
+  }
+  .heroText,
+  .maskGroupParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 825px) {
+  .heroSection {
+    padding-top: 56px;
+    padding-bottom: 27px;
+    gap: var(--gap-24);
+  }
+
+  /* Main layout: flatten heroHeader so children participate in heroSection ordering */
+  .heroHeader {
+    display: contents;
+  }
+
+  /* Mascot: after video on mobile, flipped to face left */
+  .heroVisIcon {
+    order: 6;
+    width: 100%;
+    max-width: 280px;
+    margin: var(--gap-16) auto 0;
+    transform: scaleX(-1);
+  }
+
+  /* Flatten heroText and descriptionContainerParent so the h1 title can
+     appear before the video, while pill / paragraph / buttons / checkmarks
+     appear after the video. */
+  .heroText,
+  .descriptionContainerParent {
+    display: contents;
+  }
+
+  /* Title (h1) comes FIRST - before the video */
+  .descriptionContainer {
+    order: 0;
+    align-self: stretch;
+    align-items: center;
+    padding: 0 var(--padding-20);
+    box-sizing: border-box;
+  }
+
+  /* Pill badge AFTER the video */
+  .wrapper {
+    order: 2;
+    align-self: center;
+  }
+
+  /* Description paragraph AFTER the video */
+  .laundryHeroes {
+    order: 3;
+    align-self: stretch;
+    padding: 0 var(--padding-20);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .storeDownload {
+    order: 4;
+    justify-content: center;
+  }
+
+  /* Checkmarks: single column, centered (triangular shape from text lengths) */
+  .container {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: var(--gap-8);
+    align-self: stretch;
+  }
+
+  .container2,
+  .container4,
+  .container6,
+  .container8 {
+    justify-content: center;
+    width: auto;
+  }
+
+  .div2 {
+    font-weight: 500;
+  }
+
+  /* Order for mobile: creates triangular shape with varying text lengths */
+  .container2 {
+    order: 1;
+  } /* أسعارنا الأقل مقارنة بالمغاسل التقليدية - longest */
+  .container4 {
+    order: 3;
+  } /* دعم سريع عبر واتساب */
+  .container6 {
+    order: 2;
+  } /* تسعيرة واضحة قبل التأكيد */
+  .container8 {
+    order: 4;
+  } /* حجز خلال ثواني - shortest */
+
+  /* Video section - use display:contents to allow children to be ordered at heroSection level */
+  .frameParent {
+    display: contents;
+  }
+
+  /* Video after text on mobile */
+  .maskGroupParent {
+    width: calc(100% - 40px);
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 662 / 380;
+    padding: var(--padding-16);
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    order: 1; /* Title first (order 0), then video */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .maskGroupIcon {
+    width: calc(100% - 16px);
+    height: auto;
+    aspect-ratio: 646 / 363;
+  }
+
+  .frameChild {
+    width: calc(100% - 16px);
+    height: auto;
+    aspect-ratio: 646 / 363;
+  }
+
+  .playButtonWrapper {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .durationBadge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  /* Benefits container on mobile */
+  .benefitsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: var(--gap-8);
+    width: 100%;
+    min-width: unset;
+    order: 7; /* After mascot */
+    box-sizing: border-box;
+  }
+
+  .frameGroup {
+    width: calc(100% - 32px);
+    max-width: 371px;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: var(--br-24);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .paragraphbackgroundshadow {
+    width: calc(100% - 32px);
+    max-width: 371px;
+    border-radius: var(--br-24);
+    padding: var(--padding-16);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .div6 {
+    white-space: normal;
+    font-size: var(--fs-24);
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroSection {
+    padding-top: 40px;
+  }
+
+  .h1 {
+    font-size: var(--fs-29);
+  }
+
+  .storeDownload {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .div2 {
+    font-size: var(--fs-16);
+    line-height: var(--lh-26);
+  }
+
+  .maskGroupParent {
+    max-width: 300px;
+    padding: var(--padding-12);
+  }
+
+  .playButton {
+    width: 70px;
+    height: 70px;
+  }
+
+  .background {
+    width: 67px;
+    height: 67px;
+  }
+
+  .heroVisIcon {
+    max-width: 240px;
+  }
+}
+
+/* ===== Video modal (expanded playback with sound) ===== */
+.videoModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: videoModalFadeIn 0.2s ease-out;
+}
+@keyframes videoModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.videoModalContent {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videoModalPlayer {
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 16px;
+  background: #000;
+  outline: none;
+}
+.videoModalClose {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+.videoModalClose:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

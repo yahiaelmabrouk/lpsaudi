@@ -1,0 +1,537 @@
+.testimonials {
+  width: 100%;
+  flex-direction: column;
+  /* Match LocationMap section spacing so the badge doesn't stick to the previous section */
+  padding: var(--padding-20) 0 0 !important;
+  gap: 0 !important; /* No gap between testimonials elements */
+  overflow: hidden;
+}
+.feedbackHeader,
+.feedbackHeaderParent,
+.testimonials {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.feedbackHeaderParent {
+  align-self: stretch;
+  justify-content: center;
+  padding: var(--padding-0) var(--padding-64);
+  gap: var(--gap-20);
+  text-align: right;
+  font-size: var(--fs-10);
+  color: var(--color-dimgray);
+  font-family: var(--font-expo-arabic);
+}
+.feedbackHeaderInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-20);
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.feedbackHeader {
+  padding: var(--padding-20) 0;
+  gap: var(--gap-32);
+  flex-wrap: wrap;
+}
+.backgroundParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-16);
+  max-width: 100%;
+  font-size: var(--fs-12);
+  color: var(--Main-Secondary);
+}
+.background {
+  border-radius: var(--br-20);
+  background: var(--gradient-6);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-4) var(--padding-16) var(--padding-5_4);
+}
+.b {
+  position: relative;
+  letter-spacing: var(--ls-0_5);
+  line-height: var(--lh-20_4);
+  text-transform: uppercase;
+}
+.parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-8);
+  font-size: var(--fs-36);
+  font-family: var(--font-dg-rafah);
+}
+.h2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.span {
+  color: var(--Main-Accent);
+}
+.appStore,
+.cards {
+  position: relative;
+  font-family: var(--font-expo-arabic);
+}
+.appStore {
+  font-size: var(--fs-24);
+  line-height: var(--lh-32);
+  font-weight: 500;
+  color: var(--Main-Accent);
+}
+.cards {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px 0 24px;
+  position: relative;
+}
+.cardsTrack {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-16);
+  width: max-content;
+  direction: ltr;
+  will-change: transform;
+  text-align: right;
+  font-size: var(--fs-10);
+  color: var(--color-dimgray);
+  font-family: var(--font-expo-arabic);
+}
+.cardsSet {
+  display: flex;
+  align-items: stretch;
+  gap: var(--gap-16);
+  flex-shrink: 0;
+}
+
+.cardLliq,
+.containerParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cardLliq {
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-32);
+  background: var(--gradient-15);
+  border: var(--border-4);
+  padding: var(--padding-20) var(--padding-22);
+  z-index: 0;
+  flex-shrink: 0;
+}
+.containerParent {
+  width: var(--width-260);
+  justify-content: flex-start;
+  gap: var(--gap-10);
+  flex: 1;
+}
+.backgroundborder,
+.container {
+  display: flex;
+  align-items: center;
+}
+.container {
+  align-self: stretch;
+  height: var(--height-38);
+  justify-content: space-between;
+  gap: var(--gap-20);
+}
+.backgroundborder {
+  border-radius: var(--br-20);
+  background-color: var(--color-ghostwhite);
+  border: var(--border-2);
+  padding: var(--padding-6) var(--padding-8);
+  gap: var(--gap-5);
+}
+.svgIcon {
+  height: var(--height-10);
+  width: var(--width-10);
+  position: relative;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-10);
+  font-size: var(--fs-13);
+  color: var(--Main-Secondary);
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.b2,
+.div {
+  position: relative;
+}
+.div {
+  font-size: var(--fs-11);
+  color: var(--color-lightslategray);
+}
+.background2 {
+  height: var(--height-38);
+  width: var(--width-38);
+  border-radius: var(--br-19);
+  background-color: var(--color-skyblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--color-white);
+}
+.b4,
+.div3 {
+  position: relative;
+}
+.b4 {
+  align-self: stretch;
+  font-size: var(--fs-22);
+  letter-spacing: var(--ls-1_5);
+  line-height: var(--lh-30);
+  color: var(--color-goldenrod);
+}
+.div3 {
+  font-size: var(--fs-11);
+  line-height: var(--lh-18_7);
+  color: var(--color-lightslategray);
+}
+.cardLliq2 {
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-32);
+  background: var(--gradient-15);
+  border: var(--border-4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-20) var(--padding-19);
+  z-index: 1;
+  flex-shrink: 0;
+  color: var(--color-darkgreen);
+}
+.backgroundborder2 {
+  border-radius: var(--br-20);
+  background-color: var(--color-mintcream);
+  border: var(--border-3);
+  display: flex;
+  align-items: center;
+  padding: var(--padding-6) var(--padding-8);
+  gap: var(--gap-5);
+}
+.playstoreIcon {
+  width: 9px;
+  position: relative;
+  max-height: 100%;
+}
+.googlePlay {
+  position: relative;
+  font-weight: 600;
+}
+.background3 {
+  height: var(--height-38);
+  width: var(--width-38);
+  border-radius: var(--br-19);
+  background-color: var(--color-darkorange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--color-white);
+}
+.h3 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--fs-22);
+  letter-spacing: var(--ls-1_5);
+  line-height: var(--lh-30);
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-goldenrod);
+}
+.span2 {
+  color: var(--color-gainsboro);
+}
+.cardLliq3 {
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-32);
+  background: var(--gradient-15);
+  border: var(--border-4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-20) var(--padding-19);
+  z-index: 2;
+  flex-shrink: 0;
+}
+.background4 {
+  height: var(--height-38);
+  width: var(--width-38);
+  border-radius: var(--br-19);
+  background: var(--gradient-16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--color-white);
+}
+.div9 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--fs-11);
+  line-height: var(--lh-18_7);
+  color: var(--color-lightslategray);
+}
+.cardLliq4,
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cardLliq4 {
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-32);
+  background: var(--gradient-15);
+  border: var(--border-4);
+  padding: var(--padding-20) var(--padding-19);
+  z-index: 3;
+  flex-shrink: 0;
+  color: var(--color-darkgreen);
+}
+.frameDiv {
+  width: var(--width-260);
+  gap: var(--gap-10);
+}
+.background5 {
+  height: var(--height-38);
+  width: var(--width-38);
+  border-radius: var(--br-19);
+  background-color: var(--color-mediumseagreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--color-white);
+}
+.b11,
+.laundr {
+  position: relative;
+}
+.b11 {
+  text-transform: uppercase;
+}
+.laundr {
+  align-self: stretch;
+  flex: 1;
+  font-size: var(--fs-13);
+  line-height: var(--lh-20);
+  color: var(--Main-Secondary);
+}
+.cardLliq5 {
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-32);
+  background: var(--gradient-15);
+  border: var(--border-4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-20) var(--padding-19);
+  z-index: 4;
+  flex-shrink: 0;
+}
+.background6 {
+  height: var(--height-38);
+  width: var(--width-38);
+  border-radius: var(--br-19);
+  background-color: var(--color-royalblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--fs-16);
+  color: var(--color-white);
+}
+.div14 {
+  position: relative;
+  font-size: var(--fs-11);
+  line-height: var(--lh-18_7);
+  color: var(--color-lightslategray);
+  text-align: left;
+}
+
+/* Subtle floating effect - keeps existing rounded white border intact,
+   layers a soft shadow so top/bottom edges read better against the page */
+.cardLliq,
+.cardLliq2,
+.cardLliq3,
+.cardLliq4,
+.cardLliq5 {
+  box-shadow:
+    0 6px 16px rgba(15, 23, 42, 0.08),
+    0 2px 4px rgba(15, 23, 42, 0.06);
+}
+
+.cardLliqItems,
+.cardLliqItems2 {
+  display: none;
+}
+
+/* Mobile CTA Button - hidden by default */
+.mobileCta {
+  display: none;
+}
+
+.mobileCtaText,
+.mobileCtaArrow {
+  /* Base styles, shown only in mobile */
+}
+
+@media screen and (max-width: 1410px) {
+  .cardsTrack {
+    gap: var(--gap-16);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimonials {
+    height: auto;
+  }
+  .feedbackHeaderParent {
+    flex-wrap: wrap;
+    padding-left: var(--padding-32);
+    padding-right: var(--padding-32);
+    box-sizing: border-box;
+  }
+  .backgroundParent,
+  .feedbackHeader {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 825px) {
+  .testimonials {
+    gap: 0 !important;
+    padding-top: var(--padding-20) !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  /* Pink ellipse on right side - positioned under Google Play */
+  .feedbackHeaderParent::before {
+    content: "";
+    position: absolute;
+    width: 392px;
+    height: 392px;
+    right: -280px;
+    bottom: -100px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(252, 70, 170, 0.2) 0%,
+      rgba(252, 70, 170, 0) 100%
+    );
+    filter: blur(25px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .feedbackHeaderParent {
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Clip the ellipse to prevent horizontal scroll */
+  }
+
+  .feedbackHeaderInner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .backgroundParent {
+    min-width: 100%;
+    align-items: center;
+  }
+
+  .parent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .feedbackHeader {
+    min-width: 100%;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .h2 {
+    font-size: var(--fs-29);
+  }
+
+  /* Mobile CTA Button */
+  .mobileCta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px 12px 24px;
+    gap: 4px;
+    width: 170px;
+    height: 35px;
+    background: var(--Main-Accent);
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 24px auto 36px;
+  }
+
+  .mobileCtaText {
+    font-family: var(--font-expo-arabic);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    background: linear-gradient(90deg, #ecfafe 0%, #c5eefc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .mobileCtaArrow {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+  }
+}
+@media screen and (max-width: 450px) {
+  .feedbackHeader {
+    gap: 16px;
+    flex-wrap: nowrap; /* Keep App Store and Google Play on same line */
+  }
+  .h2 {
+    font-size: var(--fs-22);
+  }
+  .appStore {
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
+  }
+  .b4,
+  .h3 {
+    font-size: var(--fs-18);
+    line-height: var(--lh-24);
+  }
+}

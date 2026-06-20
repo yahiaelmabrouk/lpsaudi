@@ -1,0 +1,79 @@
+# ==============================================================================
+# /ar/lh-landing/ landing page .htaccess
+#
+# The landing folder is deployed on disk as /ar/lh-landing/ (pure ASCII) while
+# the public URL is /ar/مغسلة-سجاد/. The root /public_html/.htaccess rewrites
+# the Arabic URL onto this ASCII path internally, which also avoids LiteSpeed's
+# built-in directory-trailing-slash 301 emitting a Location header with raw
+# UTF-8 bytes (which iOS Safari private mode refuses to follow).
+#
+# Scoped to this subpath only - does not affect parent dashboard/backend/etc.
+# ==============================================================================
+
+# --- Correct MIME types for modern formats (LiteSpeed misses these by default) -
+<IfModule mod_mime.c>
+    AddType image/avif                      .avif
+    AddType image/webp                      .webp
+    AddType font/woff2                      .woff2
+    AddType font/woff                       .woff
+    AddType video/mp4                       .mp4
+    AddType application/javascript          .js .mjs
+</IfModule>
+
+# --- Don't gzip already-compressed media (wastes CPU, sometimes corrupts) -----
+<IfModule mod_deflate.c>
+    SetEnvIfNoCase Request_URI \.(?:avif|webp|jpe?g|png|gif|ico|mp4|webm|woff2?|zip|gz)$ no-gzip dont-vary
+</IfModule>
+
+# --- Cache-Control ------------------------------------------------------------
+<IfModule mod_headers.c>
+    # HTML: short cache so content updates propagate
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "public, max-age=300, must-revalidate"
+    </FilesMatch>
+
+    # Versioned build assets (Vite appends a hash): cache forever
+    <FilesMatch "\.(js|mjs|css)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Media and fonts: cache 30 days
+    <FilesMatch "\.(mp4|webm|mov|webp|avif|jpe?g|png|gif|svg|ico|woff2?|otf|ttf)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+# --- Disable HTTP/3 (QUIC) advertisement -------------------------------------
+# LiteSpeed advertises HTTP/3 via Alt-Svc. iOS Safari/Chrome aggressively
+# upgrades to QUIC (UDP) on the next request. Several Middle-Eastern ISPs
+# (STC, Mobily, Zain in Saudi Arabia) throttle or drop UDP/443, causing a
+# 15-30s timeout before falling back to TCP. In private/incognito mode the
+# Alt-Svc preference is never cached, so every visit re-triggers the timeout
+# and the page never loads. "clear" revokes the HTTP/3 advertisement so
+# browsers stay on HTTP/2 (TCP) for all requests from this path.
+<IfModule mod_headers.c>
+    Header set Alt-Svc "clear"
+</IfModule>
+
+# --- Enable byte-range requests (needed for video seeking) --------------------
+<IfModule mod_headers.c>
+    Header set Accept-Ranges bytes
+</IfModule>
+
+# --- Directory index: always resolve / to index.html ------------------------
+DirectoryIndex index.html
+
+# --- SPA fallback: any non-file request serves index.html --------------------
+# No RewriteBase: relative rule target resolves inside this directory regardless
+# of what the public URL looked like (Arabic or already-rewritten ASCII).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Real files and directories pass through
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Everything else -> index.html (SPA fallback)
+    RewriteRule . index.html [L]
+</IfModule>

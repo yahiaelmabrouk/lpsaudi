@@ -1,0 +1,86 @@
+.questionCardAr {
+  align-self: stretch;
+  box-shadow: var(--Shadow-01);
+  border-radius: var(--br-16);
+  background: var(--gradient-18);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-32) var(--padding-64);
+  gap: var(--gap-0);
+  text-align: right;
+  font-size: var(--fs-24);
+  color: var(--Main-Secondary);
+  font-family: var(--font-expo-arabic);
+  cursor: pointer;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.instancePlaceholderIcon {
+  height: var(--height-24);
+  width: var(--width-24);
+  position: relative;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+.iconOpen {
+  transform: rotate(180deg);
+}
+.questionContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-8);
+  user-select: text;
+  -webkit-user-select: text;
+}
+.doYouClean,
+.yesourSpecialCare {
+  align-self: stretch;
+  position: relative;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.doYouClean {
+  line-height: var(--lh-32);
+  font-weight: 700;
+}
+.yesourSpecialCare {
+  font-size: var(--fs-16);
+  line-height: var(--lh-24);
+  font-weight: 520;
+}
+
+@media screen and (max-width: 825px) {
+  .questionCardAr {
+    padding: var(--padding-20) var(--padding-24);
+  }
+
+  .doYouClean {
+    font-size: var(--fs-18);
+    line-height: var(--lh-28);
+  }
+
+  .yesourSpecialCare {
+    font-size: var(--fs-14);
+    line-height: var(--lh-22);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .questionCardAr {
+    padding: var(--padding-16) var(--padding-20);
+  }
+
+  .doYouClean {
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
+  }
+
+  .yesourSpecialCare {
+    font-size: var(--fs-13);
+    line-height: var(--lh-20);
+  }
+}
